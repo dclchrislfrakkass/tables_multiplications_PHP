@@ -7,14 +7,16 @@
 <link rel="stylesheet" href="css/style.css">
 <title>Tables de multiplications</title>
 </head>
+
 <header>
 
 <h1>TABLES DE MULTIPLICATIONS</h1>
 <br>
-
-<form id="multiplication">
+<div class="tabs"></div>
+<form method="post" name="multiplication" id="multiplication">
 <div id="choice">
-<select name="tables">
+<select name="multis">
+<option value="0">-----</option>
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -26,23 +28,34 @@
 <option value="9">9</option>
 <option value="10">10</option>
 </select>
+
 <br>
 Choisis la table à afficher
 <br>
-<input type="submit" value="Voir">
+<input id="send" type="submit" value="voir"/>
+<?php
+$chiffre = $_POST['multis'];
+include "table.php";
+drawtable();
+
+?>
+
+</div>
 </form>
+
+</div>
 
 </header>
 
 
-<body>
 
-
-
-</div>
 <div id="affichage">
+
 </div>
 
+
+
+<script src="js/main.js"></script>
 </body>
 
 

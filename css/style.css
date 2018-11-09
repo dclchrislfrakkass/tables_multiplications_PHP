@@ -12,6 +12,7 @@ header {
     width: 100%;
     display: flex;
     font-size: 1.5vmax;
+    text-align: center;
     align-items: center;
     flex-direction: column;
     box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
@@ -20,8 +21,6 @@ header {
 
 h1 {
     color: white;
-    
-    
 }
 #multiplication {
     margin-top: 3vmax;
@@ -39,23 +38,22 @@ select {
     width: 30vmax;
     text-align: center;
 }
-input{
+#send{
+    margin-top: 2vmax;
     width: 15vmax;
     margin-left: 20vmax;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-/*#multiplication:hover {
+#send:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}*/
+}
+#affichage {
 
-
-
-/*#multiplication {
-    
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-    box-shadow: 5px 5px 15px 5px #000000;
+    margin-top: 35vmax;
+    /* position: absolute; */
     text-align: center;
-    background-color: white;
-    margin-left: 20%;
-    margin-right: 20%;
-}*/
+
+}
+
